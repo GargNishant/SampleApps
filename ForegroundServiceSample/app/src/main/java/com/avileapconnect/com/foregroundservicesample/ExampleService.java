@@ -42,6 +42,8 @@ public class ExampleService extends Service {
         //This makes sure that it will not be killed
         startForeground(1,notification);
 
+        //This are some of the properties. In our case, the service should not restart after it has
+        //been killed, therefore we call START_NOT_STICK
         return START_NOT_STICKY;
     }
 
